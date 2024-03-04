@@ -1,6 +1,6 @@
 .DS_Store
-countries.csv
 map.html
+countries.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
