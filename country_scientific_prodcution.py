@@ -6,13 +6,13 @@ import folium
 
 def load_affiliations():
     """Carga el archivo scopus-papers.csv y retorna un dataframe con la columna 'Affiliations'"""
-    df = pd.read_csv(
+    dataframe = pd.read_csv(
         "https://raw.githubusercontent.com/jdvelasq/datalabs/master/datasets/scopus-papers.csv",
         sep=",",
         index_col=None,
     )[["Affiliations"]]
 
-    return df
+    return dataframe
 
 
 def remove_na_rows(affiliations):
